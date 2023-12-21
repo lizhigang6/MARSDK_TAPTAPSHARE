@@ -1,0 +1,6 @@
+use_frameworks!
+target 'MARSDK_TAPTAPSHARE_Tests' do
+  pod 'MARSDK_TAPTAPSHARE', :path => '../'
+  
+  
+end
