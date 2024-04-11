@@ -335,6 +335,123 @@
           },
           {
             "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapOpenApi@objc(cs)TapShareObj(py)title",
+            "mangledName": "$s10TapOpenApi0A8ShareObjC5titleSSSgvp",
+            "moduleName": "TapOpenApi",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapOpenApi@objc(cs)TapShareObj(im)title",
+                "mangledName": "$s10TapOpenApi0A8ShareObjC5titleSSSgvg",
+                "moduleName": "TapOpenApi",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapOpenApi@objc(cs)TapShareObj(im)setTitle:",
+                "mangledName": "$s10TapOpenApi0A8ShareObjC5titleSSSgvs",
+                "moduleName": "TapOpenApi",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TapOpenApi0A8ShareObjC5titleSSSgvM",
+                "mangledName": "$s10TapOpenApi0A8ShareObjC5titleSSSgvM",
+                "moduleName": "TapOpenApi",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "contents",
             "printedName": "contents",
             "children": [
@@ -1029,7 +1146,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(appId:contents:groupLabelId:hashtagIds:footerImages:failUrl:)",
+            "printedName": "init(appId:title:contents:groupLabelId:hashtagIds:footerImages:failUrl:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1042,6 +1159,21 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -1128,10 +1260,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@TapOpenApi@objc(cs)TapShareObj(im)initWithAppId:contents:groupLabelId:hashtagIds:footerImages:failUrl:",
-            "mangledName": "$s10TapOpenApi0A8ShareObjC5appId8contents010groupLabelG010hashtagIds12footerImages7failUrlACSS_SSSgA2JSay10Foundation4DataVGSgAJtcfc",
+            "usr": "c:@M@TapOpenApi@objc(cs)TapShareObj(im)initWithAppId:title:contents:groupLabelId:hashtagIds:footerImages:failUrl:",
+            "mangledName": "$s10TapOpenApi0A8ShareObjC5appId5title8contents010groupLabelG010hashtagIds12footerImages7failUrlACSS_SSSgA3KSay10Foundation4DataVGSgAKtcfc",
             "moduleName": "TapOpenApi",
-            "objc_name": "initWithAppId:contents:groupLabelId:hashtagIds:footerImages:failUrl:",
+            "objc_name": "initWithAppId:title:contents:groupLabelId:hashtagIds:footerImages:failUrl:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -1342,5 +1474,342 @@
     ],
     "json_format_version": 8
   },
-  "ConstValues": []
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApplicationLifeCycleListner.swift",
+      "kind": "StringLiteral",
+      "offset": 480,
+      "length": 40,
+      "value": "\"TapOpenApi, start reading share result\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApplicationLifeCycleListner.swift",
+      "kind": "StringLiteral",
+      "offset": 690,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApplicationLifeCycleListner.swift",
+      "kind": "Array",
+      "offset": 889,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApplicationLifeCycleListner.swift",
+      "kind": "StringLiteral",
+      "offset": 984,
+      "length": 8,
+      "value": "\"result\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApplicationLifeCycleListner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1287,
+      "length": 2,
+      "value": "-8"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApplicationLifeCycleListner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1434,
+      "length": 2,
+      "value": "-7"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApplicationLifeCycleListner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1568,
+      "length": 2,
+      "value": "-6"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApplicationLifeCycleListner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1701,
+      "length": 2,
+      "value": "-5"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApplicationLifeCycleListner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1810,
+      "length": 2,
+      "value": "-4"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApplicationLifeCycleListner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1902,
+      "length": 2,
+      "value": "-3"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApplicationLifeCycleListner.swift",
+      "kind": "StringLiteral",
+      "offset": 1945,
+      "length": 40,
+      "value": "\"TapOpenApi, share result code: \""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApplicationLifeCycleListner.swift",
+      "kind": "StringLiteral",
+      "offset": 1984,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApplicationLifeCycleListner.swift",
+      "kind": "Array",
+      "offset": 2152,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "StringLiteral",
+      "offset": 324,
+      "length": 11,
+      "value": "\"taptap:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "BooleanLiteral",
+      "offset": 426,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1200,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "StringLiteral",
+      "offset": 1342,
+      "length": 56,
+      "value": "\"未安装 Taptap, url: \""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "StringLiteral",
+      "offset": 1372,
+      "length": 1,
+      "value": "\", isSuccess: \""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "StringLiteral",
+      "offset": 1397,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1469,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1509,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "StringLiteral",
+      "offset": 1633,
+      "length": 33,
+      "value": "\"TapTap.TapThirdEditorShareModel\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1794,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "StringLiteral",
+      "offset": 1871,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "StringLiteral",
+      "offset": 1950,
+      "length": 101,
+      "value": "\"https:\/\/www.taptap.cn\/tapiosnow\/dispatch?type=third_share&opener=game_sdk&game_sdk_app=\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "StringLiteral",
+      "offset": 2050,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "StringLiteral",
+      "offset": 2288,
+      "length": 43,
+      "value": "\"TapOpenApi, open url result: \""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "StringLiteral",
+      "offset": 2330,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2408,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "StringLiteral",
+      "offset": 2799,
+      "length": 84,
+      "value": "\"https:\/\/m.taptap.cn\/app\/\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "StringLiteral",
+      "offset": 2832,
+      "length": 2,
+      "value": "\"\/?utm_medium=rep&utm_source=rep_share_sdk_\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapApi.swift",
+      "kind": "StringLiteral",
+      "offset": 2882,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "BooleanLiteral",
+      "offset": 978,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 1051,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 1701,
+      "length": 7,
+      "value": "\"title\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 1767,
+      "length": 10,
+      "value": "\"contents\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 1833,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 1903,
+      "length": 14,
+      "value": "\"groupLabelId\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 1978,
+      "length": 12,
+      "value": "\"hashtagIds\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 2053,
+      "length": 14,
+      "value": "\"footerImages\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 2125,
+      "length": 9,
+      "value": "\"failUrl\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 2240,
+      "length": 7,
+      "value": "\"title\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 2288,
+      "length": 10,
+      "value": "\"contents\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 2336,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 2388,
+      "length": 14,
+      "value": "\"groupLabelId\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 2445,
+      "length": 12,
+      "value": "\"hashtagIds\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 2502,
+      "length": 14,
+      "value": "\"footerImages\""
+    },
+    {
+      "filePath": "\/Users\/kai\/Desktop\/workspace\/projects\/tapopenapi\/TapOpenApi\/TapShareObj.swift",
+      "kind": "StringLiteral",
+      "offset": 2556,
+      "length": 9,
+      "value": "\"failUrl\""
+    }
+  ]
 }

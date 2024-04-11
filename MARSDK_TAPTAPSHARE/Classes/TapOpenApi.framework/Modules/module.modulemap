@@ -1,7 +1,7 @@
 framework module TapOpenApi {
   umbrella header "TapOpenApi.h"
-
   export *
+
   module * { export * }
 }
 
